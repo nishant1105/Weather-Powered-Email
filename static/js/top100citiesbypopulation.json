@@ -1,0 +1,402 @@
+var localities = JSON.stringify([
+	{
+      value: 'New York, NY',
+      label: 'New York, NY',
+    },
+    {
+      value: 'Los Angeles, CA',
+      label: 'Los Angeles, CA',
+    },
+    {
+      value: 'Chicago, IL',
+      label: 'Chicago, IL',
+    },
+    {
+      value: 'Brooklyn, NY',
+      label: 'Brooklyn, NY',
+    },
+    {
+      value: 'Queens, NY',
+      label: 'Queens, NY',
+    },
+    {
+      value: 'Houston, TX',
+      label: 'Houston, TX',
+    },
+    {
+      value: 'Manhattan, NY',
+      label: 'Manhattan, NY',
+    },
+    {
+      value: 'Philadelphia, PA',
+      label: 'Philadelphia, PA',
+    },
+    {
+      value: 'Phoenix, AZ',
+      label: 'Phoenix, AZ',
+    },
+    {
+      value: 'San Antonio, TX',
+      label: 'San Antonio, TX',
+    },
+    {
+      value: 'Bronx, NY',
+      label: 'Bronx, NY',
+    },
+    {
+      value: 'San Diego, CA',
+      label: 'San Diego, CA',
+    },
+    {
+      value: 'Dallas, TX',
+      label: 'Dallas, TX',
+    },
+    {
+      value: 'San Jose, CA',
+      label: 'San Jose, CA',
+    },
+    {
+      value: 'East San Gabriel Valley, CA',
+      label: 'East San Gabriel Valley, CA',
+    },
+    {
+      value: 'Austin, TX',
+      label: 'Austin, TX',
+    },
+    {
+      value: 'Jacksonville, FL',
+      label: 'Jacksonville, FL',
+    },
+    {
+      value: 'San Francisco, CA',
+      label: 'San Francisco, CA',
+    },
+    {
+      value: 'Indianapolis, IN',
+      label: 'Indianapolis, IN',
+    },
+    {
+      value: 'Columbus, OH',
+      label: 'Columbus, OH',
+    },
+    {
+      value: 'Fort Worth, TX',
+      label: 'Fort Worth, TX',
+    },
+    {
+      value: 'Charlotte, NC',
+      label: 'Charlotte, NC',
+    },
+    {
+      value: 'Detroit, MI',
+      label: 'Detroit, MI',
+    },
+    {
+      value: 'El Paso, TX',
+      label: 'El Paso, TX',
+    },
+    {
+      value: 'Seattle, WA',
+      label: 'Seattle, WA',
+    },
+    {
+      value: 'Denver, CO',
+      label: 'Denver, CO',
+    },
+    {
+      value: 'Washington, DC',
+      label: 'Washington, DC',
+    },
+    {
+      value: 'Memphis, TN',
+      label: 'Memphis, TN',
+    },
+    {
+      value: 'Boston, MA',
+      label: 'Boston, MA',
+    },
+    {
+      value: 'Nashville-Davidson, TN',
+      label: 'Nashville-Davidson, TN',
+    },
+    {
+      value: 'Baltimore, MD',
+      label: 'Baltimore, MD',
+    },
+    {
+      value: 'Metropolitan Government, TN',
+      label: 'Metropolitan Government, TN',
+    },
+    {
+      value: 'Oklahoma City, OK',
+      label: 'Oklahoma City, OK',
+    },
+    {
+      value: 'Portland, OR',
+      label: 'Portland, OR',
+    },
+    {
+      value: 'Las Vegas, NV',
+      label: 'Las Vegas, NV',
+    },
+    {
+      value: 'Milwaukee, WI',
+      label: 'Milwaukee, WI',
+    },
+    {
+      value: 'Albuquerque, NM',
+      label: 'Albuquerque, NM',
+    },
+    {
+      value: 'Tucson, AZ',
+      label: 'Tucson, AZ',
+    },
+    {
+      value: 'Fresno, CA',
+      label: 'Fresno, CA',
+    },
+    {
+      value: 'East Seattle, WA',
+      label: 'East Seattle, WA',
+    },
+    {
+      value: 'Central Contra Costa, CA',
+      label: 'Central Contra Costa, CA',
+    },
+    {
+      value: 'Sacramento, CA',
+      label: 'Sacramento, CA',
+    },
+    {
+      value: 'Staten Island, NY',
+      label: 'Staten Island, NY',
+    },
+    {
+      value: 'Long Beach, CA',
+      label: 'Long Beach, CA',
+    },
+    {
+      value: 'Northeast Tarrant, TX',
+      label: 'Northeast Tarrant, TX',
+    },
+    {
+      value: 'Kansas City, MO',
+      label: 'Kansas City, MO',
+    },
+    {
+      value: 'Mesa, AZ',
+      label: 'Mesa, AZ',
+    },
+    {
+      value: 'Northwest Harris, TX',
+      label: 'Northwest Harris, TX',
+    },
+    {
+      value: 'Atlanta, GA',
+      label: 'Atlanta, GA',
+    },
+    {
+      value: 'Northeast Jefferson, CO',
+      label: 'Northeast Jefferson, CO',
+    },
+    {
+      value: 'Virginia Beach, VA',
+      label: 'Virginia Beach, VA',
+    },
+    {
+      value: 'Omaha, NE',
+      label: 'Omaha, NE',
+    },
+    {
+      value: 'Colorado Springs, CO',
+      label: 'Colorado Springs, CO',
+    },
+    {
+      value: 'Raleigh, NC',
+      label: 'Raleigh, NC',
+    },
+    {
+      value: 'Miami, FL',
+      label: 'Miami, FL',
+    },
+    {
+      value: 'Oakland, CA',
+      label: 'Oakland, CA',
+    },
+    {
+      value: 'Minneapolis, MN',
+      label: 'Minneapolis, MN',
+    },
+    {
+      value: 'Tulsa, OK',
+      label: 'Tulsa, OK',
+    },
+    {
+      value: 'Cleveland, OH',
+      label: 'Cleveland, OH',
+    },
+    {
+      value: 'Wichita, KS',
+      label: 'Wichita, KS',
+    },
+    {
+      value: 'New Orleans, LA',
+      label: 'New Orleans, LA',
+    },
+    {
+      value: 'Arlington, TX',
+      label: 'Arlington, TX',
+    },
+    {
+      value: 'North Coast, CA',
+      label: 'North Coast, CA',
+    },
+    {
+      value: 'Honolulu, HI',
+      label: 'Honolulu, HI',
+    },
+    {
+      value: 'Bakersfield, CA',
+      label: 'Bakersfield, CA',
+    },
+    {
+      value: 'Tampa, FL',
+      label: 'Tampa, FL',
+    },
+    {
+      value: 'Aurora, CO',
+      label: 'Aurora, CO',
+    },
+    {
+      value: 'Urban Honolulu, HI',
+      label: 'Urban Honolulu, HI',
+    },
+    {
+      value: 'Anaheim, CA',
+      label: 'Anaheim, CA',
+    },
+    {
+      value: 'Kendale Lakes-Lindgren Acres, FL',
+      label: 'Kendale Lakes-Lindgren Acres, FL',
+    },
+    {
+      value: 'Santa Ana, CA',
+      label: 'Santa Ana, CA',
+    },
+    {
+      value: 'South Aurora, CO',
+      label: 'South Aurora, CO',
+    },
+    {
+      value: 'Upper San Gabriel Valley, CA',
+      label: 'Upper San Gabriel Valley, CA',
+    },
+    {
+      value: 'Southwest San Gabriel Valley, CA',
+      label: 'Southwest San Gabriel Valley, CA',
+    },
+    {
+      value: 'Corpus Christi, TX',
+      label: 'Corpus Christi, TX',
+    },
+    {
+      value: 'Riverside, CA',
+      label: 'Riverside, CA',
+    },
+    {
+      value: 'St. Louis, MO',
+      label: 'St. Louis, MO',
+    },
+    {
+      value: 'Lexington-Fayette, KY',
+      label: 'Lexington-Fayette, KY',
+    },
+    {
+      value: 'West Adams, CO',
+      label: 'West Adams, CO',
+    },
+    {
+      value: 'Pittsburgh, PA',
+      label: 'Pittsburgh, PA',
+    },
+    {
+      value: 'Stockton, CA',
+      label: 'Stockton, CA',
+    },
+    {
+      value: 'Anchorage, AK',
+      label: 'Anchorage, AK',
+    },
+    {
+      value: 'South Coast, CA',
+      label: 'South Coast, CA',
+    },
+    {
+      value: 'Cincinnati, OH',
+      label: 'Cincinnati, OH',
+    },
+    {
+      value: 'St. Paul, MN',
+      label: 'St. Paul, MN',
+    },
+    {
+      value: 'Southeast Montgomery, TX',
+      label: 'Southeast Montgomery, TX',
+    },
+    {
+      value: 'Fayette, KY',
+      label: 'Fayette, KY',
+    },
+    {
+      value: 'Greensboro, NC',
+      label: 'Greensboro, NC',
+    },
+    {
+      value: 'Toledo, OH',
+      label: 'Toledo, OH',
+    },
+    {
+      value: 'Newark, NJ',
+      label: 'Newark, NJ',
+    },
+    {
+      value: 'Ewa, HI',
+      label: 'Ewa, HI',
+    },
+    {
+      value: 'Plano, TX',
+      label: 'Plano, TX',
+    },
+    {
+      value: 'Henderson, NV',
+      label: 'Henderson, NV',
+    },
+    {
+      value: 'Lincoln, NE',
+      label: 'Lincoln, NE',
+    },
+    {
+      value: 'Louisville, KY',
+      label: 'Louisville, KY',
+    },
+    {
+      value: 'Orlando, FL',
+      label: 'Orlando, FL',
+    },
+    {
+      value: 'Jersey City, NJ',
+      label: 'Jersey City, NJ',
+    },
+    {
+      value: 'Chula Vista, CA',
+      label: 'Chula Vista, CA',
+    },
+    {
+      value: 'Buffalo, NY',
+      label: 'Buffalo, NY',
+    },
+    {
+      value: 'Fort Wayne, IN',
+      label: 'Fort Wayne, IN',
+    }
+]);

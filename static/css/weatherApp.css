@@ -1,0 +1,25 @@
+.signupFormContainer {
+	position: relative;
+	left: 100px;
+	top: 100px;
+	height: 400px;
+	width: 500px;
+	border: 2px solid black;
+}
+.formTitleContainer {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+.emailContainer, .locationContainer {
+	position: relative;
+	left: 100px;
+}
+.emailLabel, .locationLabel {
+	padding-bottom: 5px;
+}
+
+.subscribeBtnContainer {
+	position: relative;
+	left: 200px;
+	padding-top: 50px;
+}
